@@ -19,6 +19,7 @@
 /* #2 */
 .sidebar__channels {
   flex: 1; /*take most space*/
+  overflow: scroll;
 }
 
 /* #2.1 */
@@ -80,12 +81,45 @@
   padding: 8px;
 }
 
+/* #4.1 */
+.sidebar__avatarIcon:hover {
+  cursor: pointer;
+}
+
 /* #4.2 */
 .sidebar__profileInfo > h3 {
   color: white;
+  font-size: medium;
 }
 
 /* #4.3 */
 .sidebar__profileIcons > .MuiSvgIcon-root {
   padding: 5px;
+}
+
+.sidebar__hoverText {
+  visibility: hidden;
+  width: fit-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 2px;
+  position: absolute;
+  margin-top: -100px;
+  margin-left: -5px;
+  z-index: 1;
+}
+.sidebar__avatarIcon:hover + .sidebar__hoverText {
+  visibility: visible;
+}
+
+.sidebar__channels::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sidebar__channels {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

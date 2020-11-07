@@ -28,11 +28,11 @@
 
 .chatHeader__right > .MuiSvgIcon-root {
   padding: 5px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .chatHeader__right > .MuiSvgIcon-root:hover {
-  color: white;
+  /* color: white; */
 }
 
 /* #1.2.2 */
