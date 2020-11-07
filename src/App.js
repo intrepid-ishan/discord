@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
+import Chat from './Chat';
+import Sidebar from './Sidebar';
 
 function App() {
   return (
     //BEM
     <div className="app">
-      <h1>Let's build it dude!!</h1>
+      <Sidebar />
+      <Chat />
     </div>
   );
 }
