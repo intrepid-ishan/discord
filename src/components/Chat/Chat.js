@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import './Chat.css';
-import ChatHeader from './ChatHeader';
+import ChatHeader from './ChatHeader/ChatHeader';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import GifIcon from '@material-ui/icons/Gif';
 import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
-import Message from './Message';
-import { selectChannelId, selectChannelName } from './features/appSlice';
-import { selectUser } from './features/userSlice';
-import db from './firebase';
+import Message from './Message/Message';
+import { selectChannelId, selectChannelName } from '../../features/appSlice';
+import { selectUser } from '../../features/userSlice';
+import db from '../../firebase/firebase';
 import firebase from 'firebase';
+import './Chat.css';
 
 function Chat() {
 
